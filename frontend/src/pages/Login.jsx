@@ -42,7 +42,7 @@ const LoginPage = () => {
       className="flex flex-col items-center h-screen justify-center
     bg-gradient-to-b from-teal-600 from-50% to-gray-100 to-50% space-y-6"
     >
-      <h2 className="font-pacifico text-3xl text-white">
+      <h2  style={{ fontFamily: 'Pacifico, cursive' }} className=" text-4xl text-white">
         Employee Management System
       </h2>
       <div className="border shadow p-6 w-80 bg-white">
