@@ -6,7 +6,7 @@ const RoleBasedRoutes = ({children, requiredRole}) => {
     const {user, loading} = useAuth()
 
     if(loading){
-        <div>Loading....</div>
+        return <div>Loading....</div>
     }
 
     if(!requiredRole.includes(user.role)) {
