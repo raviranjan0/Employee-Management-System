@@ -15,7 +15,7 @@ const LoginPage = () => {
    
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         { email, password }
       );
      if(response.data.success){

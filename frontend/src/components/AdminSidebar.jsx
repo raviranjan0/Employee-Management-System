@@ -22,35 +22,57 @@ const AdminSidebar = () => {
       </div>
 
       <div>
-        <NavLink to="/admin-dashboard"
-        className={({isActive}) =>`${isActive ?"bg-teal-500": ""} flex items-center space-x-4 block py-2.5 px-4  text-lg rounded`}>
+        <NavLink
+          to="/admin-dashboard"
+          className={({ isActive }) =>
+            `${
+              isActive ? "bg-teal-500" : ""
+            } flex items-center space-x-4 block py-2.5 px-4  text-lg rounded`
+          }
+          end
+        >
           <FaTachometerAlt />
           <span>Dashboard</span>
         </NavLink>
 
-        <NavLink to="/admin-dashboard"
-        className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded">
+        <NavLink
+          to="/admin-dashboard/employee"
+          className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded"
+        >
           <FaUsers />
           <span>Employees</span>
         </NavLink>
 
-        <NavLink to="/admin-dashboard"
-        className="flex items-center space-x-4 block py-2.5 px-4  text-lg rounded">
+        <NavLink
+          to="/admin-dashboard/department"
+          className={({ isActive }) =>
+            `${
+              isActive ? "bg-teal-500" : ""
+            } flex items-center space-x-4 block py-2.5 px-4  text-lg rounded`
+          }
+        >
+          {" "}
           <FaBuilding />
           <span>Department</span>
         </NavLink>
-        <NavLink to="/admin-dashboard"
-        className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded">
+        <NavLink
+          to="/admin-dashboard"
+          className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded"
+        >
           <FaCalendarAlt />
           <span>Leave</span>
         </NavLink>
-        <NavLink to="/admin-dashboard"
-        className="flex items-center space-x-4 block py-2.5 px-4  text-lg rounded">
+        <NavLink
+          to="/admin-dashboard"
+          className="flex items-center space-x-4 block py-2.5 px-4  text-lg rounded"
+        >
           <FaMoneyBillWave />
           <span>Salary</span>
         </NavLink>
-        <NavLink to="/admin-dashboard"
-        className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded">
+        <NavLink
+          to="/admin-dashboard"
+          className="flex items-center space-x-4 block py-2.5 px-4 text-lg rounded"
+        >
           <FaCogs />
           <span>Settings</span>
         </NavLink>
